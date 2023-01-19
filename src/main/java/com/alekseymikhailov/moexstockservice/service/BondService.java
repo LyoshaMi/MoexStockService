@@ -5,13 +5,9 @@ import com.alekseymikhailov.moexstockservice.exception.BondNotFoundException;
 import com.alekseymikhailov.moexstockservice.exception.LimitRequestsException;
 import com.alekseymikhailov.moexstockservice.model.Currency;
 import com.alekseymikhailov.moexstockservice.model.Stock;
-import com.alekseymikhailov.moexstockservice.moexclient.CorporateBondsClient;
-import com.alekseymikhailov.moexstockservice.moexclient.GovBondsClient;
-import com.alekseymikhailov.moexstockservice.parser.Parser;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.CacheManager;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
