@@ -1,2 +1,12 @@
-package com.alekseymikhailov.moexstockservice.dto;public class StocksPricesDto {
+package com.alekseymikhailov.moexstockservice.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Value;
+
+import java.util.List;
+
+@AllArgsConstructor
+@Value
+public class StocksPricesDto {
+    private List<StockPrice> prices;
 }

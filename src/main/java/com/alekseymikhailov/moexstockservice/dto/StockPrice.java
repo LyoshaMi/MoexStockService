@@ -1,2 +1,11 @@
-package com.alekseymikhailov.moexstockservice.dto;public class StockPrice {
+package com.alekseymikhailov.moexstockservice.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Value;
+
+@AllArgsConstructor
+@Value
+public class StockPrice {
+    private String figi;
+    private Double price;
 }
